@@ -30,5 +30,5 @@ fn main() {
 
 fn generate_bat_content(ps1_path: &path::Path) -> String {
     let ps1_path_string = ps1_path.to_str().unwrap();
-    format!("@echo off\npowershell -NoProfile -ExecutionPolicy Unrestricted {ps1_path_string}")
+    format!("@echo off\r\npowershell -NoProfile -ExecutionPolicy Unrestricted {ps1_path_string}")
 }
